@@ -1,0 +1,3 @@
+PROJECT(NEWHELLO) 
+INCLUDE_DIRECTORIES(/usr/local/include/hello) 
+ADD_SUBDIRECTORY(src)

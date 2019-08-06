@@ -1,0 +1,7 @@
+ADD_EXECUTABLE(main main.c)
+SET(CMAKE_LIBRARY_PATH /usr/local/lib)
+FIND_LIBRARY(mylib hello)
+IF(mylib)
+	TARGET_LINK_LIBRARIES(main ${mylib})
+    MESSAGE(STATUS "HOME dir: $ENV{HOME}")
+ENDIF(mylib)
